@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles-login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="social-login">
+            <h2>Redes Sociales</h2>
+            <button class="facebook">Facebook</button>
+            <button class="twitter">Twitter</button>
+            <button class="google">Google</button>
+        </div>
+        <div class="manual-login">
+            <h2>Iniciar Sesion</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" name="username" placeholder="Usuario" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recordar</label>
+                </div>
+                <button type="submit" class="login-button">Iniciar Sesion</button>
+            </form>
+            <div class="links">
+                <a href="/register">Registrarse</a> | <a href="#">Olvidaste la contraseña?</a>
+            </div>
+        </div>
+    </div>
+    <script src="/validation-login.js"></script>
+</body>
+
+</html>
